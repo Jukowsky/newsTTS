@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  news-tts:
+    build: 
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: turkish-news-tts
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TZ=Europe/Istanbul  # Set to Turkish timezone
+    volumes:
+      - ../audio_files:/app/audio_files
+      - ../logs:/app/logs
+    restart: unless-stopped
+    networks:
+      - news-tts-network
+    
+    # Optional: Add a web interface service
+  # web-interface:
+  #   build:
+  #     context: ..
+  #     dockerfile: docker/Dockerfile.web
+  #   container_name: news-tts-web
+  #   ports:
+  #     - "8080:8080"
+  #   depends_on:
+  #     - news-tts
+  #   networks:
+  #     - news-tts-network
+
+networks:
+  news-tts-network:
+    driver: bridge
+
+volumes:
+  audio_files:
+  logs:
+

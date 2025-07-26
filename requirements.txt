@@ -1,0 +1,6 @@
+requests==2.31.0
+beautifulsoup4==4.12.2
+openai==1.97.1
+schedule==1.2.2
+lxml==4.9.3
+
