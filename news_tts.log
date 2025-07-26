@@ -1,0 +1,47 @@
+2025-07-26 22:01:55,574 - INFO - NewsTTSApp initialized successfully
+2025-07-26 22:01:55,576 - INFO - Processing columns for 2025-07-26
+2025-07-26 22:01:55,576 - INFO - Scraping columns from: https://www.dailysabah.com/columns
+2025-07-26 22:01:56,131 - WARNING - No article cards found, trying alternative method
+2025-07-26 22:01:57,483 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/israel-has-annulled-the-sovereignty-of-european-states
+2025-07-26 22:01:58,759 - WARNING - No content found for URL: https://www.dailysabah.com/columns/ihsan-aktas/archive
+2025-07-26 22:02:00,101 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/syrias-stability-unity-and-future-are-under-israeli-siege
+2025-07-26 22:02:01,307 - ERROR - Request error for https://www.dailysabah.com/columns/muhittin-ataman/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/muhittin-ataman/archive%20%20
+2025-07-26 22:02:02,669 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/how-to-motivate-a-generation-that-cant-out-earn-its-parents
+2025-07-26 22:02:03,886 - ERROR - Request error for https://www.dailysabah.com/columns/dogan-eskinat/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/dogan-eskinat/archive%20%20
+2025-07-26 22:02:05,245 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/a-festival-of-liberation-for-turkish-cypriots
+2025-07-26 22:02:06,469 - ERROR - Request error for https://www.dailysabah.com/columns/nebi-mis/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/nebi-mis/archive%20%20
+2025-07-26 22:02:07,797 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/us-xenophobes-nightmare-coming-true-a-muslim-mayor-in-new-york
+2025-07-26 22:02:09,010 - ERROR - Request error for https://www.dailysabah.com/columns/hakki-ocal/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/hakki-ocal/archive%20%20
+2025-07-26 22:02:10,464 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/how-israel-dismantles-us-middle-east-agenda
+2025-07-26 22:02:11,706 - ERROR - Request error for https://www.dailysabah.com/columns/ihsan-aktas/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/ihsan-aktas/archive%20%20
+2025-07-26 22:02:13,084 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/new-dawn-in-turkiye-the-road-to-a-terror-free-country
+2025-07-26 22:02:14,131 - ERROR - Request error for https://www.dailysabah.com/columns/muhittin-ataman/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/muhittin-ataman/archive%20%20
+2025-07-26 22:02:15,478 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/leadership-beyond-the-office-a-reflection-on-public-service
+2025-07-26 22:02:16,512 - ERROR - Request error for https://www.dailysabah.com/columns/dogan-eskinat/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/dogan-eskinat/archive%20%20
+2025-07-26 22:02:17,823 - WARNING - No content found for URL: https://www.dailysabah.com/columns/ihsan-aktas/archive
+2025-07-26 22:02:19,122 - WARNING - No content found for URL: https://www.dailysabah.com/columns/muhittin-ataman/archive
+2025-07-26 22:02:20,333 - WARNING - No content found for URL: https://www.dailysabah.com/columns/dogan-eskinat/archive
+2025-07-26 22:02:21,411 - WARNING - No content found for URL: https://www.dailysabah.com/columns/ihsan-aktas/archive
+2025-07-26 22:02:21,411 - INFO - Found 0 columns
+2025-07-26 22:02:21,412 - WARNING - No columns found to process. Running TTS demo instead.
+2025-07-26 22:02:21,412 - INFO - Running Turkish TTS demo...
+2025-07-26 22:02:21,412 - INFO - Generating TTS for turkish_demo_20250726_220221.wav (text length: 320)
+2025-07-26 22:02:24,278 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 429 Too Many Requests"
+2025-07-26 22:02:24,278 - INFO - Retrying request to /audio/speech in 0.492824 seconds
+2025-07-26 22:02:25,213 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 429 Too Many Requests"
+2025-07-26 22:02:25,213 - INFO - Retrying request to /audio/speech in 0.754414 seconds
+2025-07-26 22:02:26,407 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 429 Too Many Requests"
+2025-07-26 22:02:26,408 - ERROR - OpenAI API Error for turkish_demo_20250726_220221.wav: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-07-26 22:18:47,966 - INFO - NewsTTSApp initialized successfully
+2025-07-26 22:18:47,967 - INFO - Processing columns for 2025-07-26
+2025-07-26 22:18:47,967 - INFO - Scraping columns from: https://www.dailysabah.com/columns
+2025-07-26 22:18:48,469 - WARNING - No article cards found, trying alternative method
+2025-07-26 22:18:49,788 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/israel-has-annulled-the-sovereignty-of-european-states
+2025-07-26 22:18:51,123 - WARNING - No content found for URL: https://www.dailysabah.com/columns/ihsan-aktas/archive
+2025-07-26 22:18:52,451 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/syrias-stability-unity-and-future-are-under-israeli-siege
+2025-07-26 22:18:53,611 - ERROR - Request error for https://www.dailysabah.com/columns/muhittin-ataman/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/muhittin-ataman/archive%20%20
+2025-07-26 22:18:54,975 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/how-to-motivate-a-generation-that-cant-out-earn-its-parents
+2025-07-26 22:18:56,214 - ERROR - Request error for https://www.dailysabah.com/columns/dogan-eskinat/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/dogan-eskinat/archive%20%20
+2025-07-26 22:18:57,472 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/a-festival-of-liberation-for-turkish-cypriots
+2025-07-26 22:18:58,648 - ERROR - Request error for https://www.dailysabah.com/columns/nebi-mis/archive  : 404 Client Error: Not Found for url: https://www.dailysabah.com/columns/nebi-mis/archive%20%20
+2025-07-26 22:19:00,071 - WARNING - No content found for URL: https://www.dailysabah.com/opinion/columns/us-xenophobes-nightmare-coming-true-a-muslim-mayor-in-new-york
