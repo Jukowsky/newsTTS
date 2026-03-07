@@ -53,4 +53,15 @@ app.include_router(router, prefix="/api")
 _FRONTEND_DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
 if _FRONTEND_DIST.exists():
     from fastapi.staticfiles import StaticFiles
-    app.mount("/", StaticFiles(directory=str(_FRONTEND_DIST), html=True), name="frontend")
+    from fastapi.responses import FileResponse
+
+    # Serve static assets (JS, CSS, images, etc.)
+    app.mount("/assets", StaticFiles(directory=str(_FRONTEND_DIST / "assets")), name="assets")
+
+    # SPA catch-all: serve index.html for any unmatched route
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        file = _FRONTEND_DIST / full_path
+        if file.is_file():
+            return FileResponse(file)
+        return FileResponse(_FRONTEND_DIST / "index.html")
