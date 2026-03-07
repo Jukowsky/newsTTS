@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.db
+.env
+
+# Audio files (generated at runtime)
+backend/audio_files/
+
+# Scraped data
+scraped_news.*
+articles_for_tts/
+audio_news/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Logs
+backend/logs/
+
+# IDE
+.vscode/
+.idea/

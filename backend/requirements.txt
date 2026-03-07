@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+aiosqlite
+gTTS
+requests
+beautifulsoup4
+apscheduler
+python-dotenv
+pydantic
+pydantic-settings
+cloudscraper
+google-genai
