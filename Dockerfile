@@ -25,8 +25,8 @@ COPY backend/ ./backend/
 # Built frontend — FastAPI serves it as static files from ../frontend/dist
 COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
 
-# Runtime directories
-RUN mkdir -p backend/audio_files backend/logs
+# Persistent data directory (mount your volume here, NOT on /app/backend)
+RUN mkdir -p /app/data/audio_files /app/backend/logs
 
 WORKDIR /app/backend
 EXPOSE 8000
