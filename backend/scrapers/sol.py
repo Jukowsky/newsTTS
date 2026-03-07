@@ -18,8 +18,19 @@ class SolScraper(BaseScraper):
     portal_id = "sol"
     language = "tr"
 
+    _HEADERS = {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive",
+        "Upgrade-Insecure-Requests": "1",
+    }
+
     def __init__(self):
-        self._session = cloudscraper.create_scraper()
+        self._session = cloudscraper.create_scraper(
+            browser={"browser": "chrome", "platform": "windows", "mobile": False}
+        )
+        self._session.headers.update(self._HEADERS)
 
     def scrape(self, max_articles: int = 10) -> List[Dict]:
         logger.info("Scraping Sol Haber columns…")
@@ -78,7 +89,7 @@ class SolScraper(BaseScraper):
 
     def _fetch_article_content(self, url: str) -> str | None:
         try:
-            resp = self._session.get(url, timeout=30)
+            resp = self._session.get(url, timeout=30, headers={"Referer": LISTING_URL})
             resp.raise_for_status()
         except Exception as exc:
             logger.error("Failed to fetch article %s: %s", url, exc)
