@@ -32,6 +32,7 @@ WORKDIR /app/backend
 EXPOSE 8000
 
 CMD gunicorn main:app \
+    --chdir /app/backend \
     --worker-class uvicorn.workers.UvicornWorker \
     --workers 2 \
     --bind 0.0.0.0:${PORT:-8000} \
